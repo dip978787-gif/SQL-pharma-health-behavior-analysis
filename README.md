@@ -8,7 +8,7 @@ SQL and Excel analysis of global pharmaceutical sales data- exploring antibiotic
 This project analyses a dataset simulating realistic global pharmaceutical sales patterns using SQL and Excel. As a B.Pharmacy graduate transitioning into data analytics, this project combines domain knowledge with technical analysis to explore consumption trends, health behavior patterns, and regional differences across 18+ countries.
 
 ## Key Questions Explored
-- How does antibiotic consumption trend worked over time, and what might this suggest about overuse/AMR risk?
+- How does antibiotic consumption trend changed over time, and what might this suggest about overuse/AMR risk?
 - Which countries show more "preventive" (vitamin-based) vs "reactive" (chronic disease medication) health spending?
 - How does age group influence consumption of specific drugs like Amlodipine (hypertension) and Metformin (diabetes/PCOS)?
 
