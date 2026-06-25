@@ -2,18 +2,19 @@
 SQL and Excel analysis of global pharmaceutical sales data- exploring antibiotic reliance, preventive vs reactive behavior, and regional consumption patterns.
 
 #SUMMARY
-```sql*
+```sql
 Description: Total supplement/Vitamin sales in countries in descending order of sales
 SELECT
 country,
 SUM(units_sold) AS "Total Sales"
 FROM
-global_pharmacy_sales_2020_2025_daily_dataset AS dataset
+global_pharmacy_sales_2020_2025_daily_dataset 
 WHERE
 category LIKE '%Vitamin%'
-GROUP BY country
+GROUP BY
+ country
 ORDER BY
-units_sold DESC;
+units_sold DESC
 ```
 ```sql
 Description: Amlodipine use by country and age groups
