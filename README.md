@@ -3,7 +3,7 @@ SQL and Excel analysis of global pharmaceutical sales data- exploring antibiotic
 
 #SUMMARY
 ```sql*
-Description: Total supplement/Vitamin sales in countries in descending order of sales.
+Description: Total supplement/Vitamin sales in countries in descending order of sales
 SELECT
 country,
 SUM(units_sold) AS "Total Sales"
