@@ -1,6 +1,38 @@
 # SQL-pharma-health-behavior-analysis
 SQL and Excel analysis of global pharmaceutical sales data- exploring antibiotic reliance, preventive vs reactive behavior, and regional consumption patterns.
 
+#SUMMARY
+/*
+Description: Total supplement/Vitamin sales in countries in descending order of sales.
+*/
+SELECT
+country,
+SUM(units_sold) AS "Total Sales"
+FROM
+global_pharmacy_sales_2020_2025_daily_dataset AS dataset
+WHERE
+category LIKE '%Vitamin%'
+GROUP BY country
+ORDER BY
+ units_sold DESC;
+
+/*
+Description: Amlodipine use by country and age groups
+*/
+SELECT
+country,
+age_group,
+SUM(units_sold) AS "Total Sales"
+FROM 
+global_pharmacy_sales_2020_2025_daily_dataset AS [Pharma Sales]
+WHERE region= 'South Asia' AND medicine= 'Amlodipine'
+GROUP BY
+ country, age_group
+ORDER BY
+ SUM(units_sold) DESC
+
+
+
 
 # Global Pharmaceutical Sales Analysis
 
